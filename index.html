@@ -14,7 +14,6 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link rel="shortcut icon" href="img/favicon.ico">
     <title>Portfolio</title>
 
     <!-- Global stylesheets -->
@@ -75,6 +74,135 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         	height : 300px;
         	width  : 500px;
         }
+        
+   		.row {
+		   margin : 0 5%;
+		}
+		
+		.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
+		    content: '';
+		    display: block;
+		    position: absolute;
+		    width: 0;
+		    height: 0;
+		    border-style: solid;
+		    border-width: 9px 9px 9px 0;
+		    border-color: transparent #f2f3f7 transparent transparent;
+		    left: 0;
+		    top: 10px;
+		    margin-left: -9px;
+		}
+		
+		.row:before, .row:after {
+		    content: " ";
+		    display: table;
+		}
+		
+	   	.timeline-centered {
+		    position: relative;
+		    margin-bottom: 30px;
+		}
+	
+		.js .animate-box {
+	   		opacity: 0;
+		}
+		
+		.timeline-centered .timeline-entry {
+		    position: relative;
+		    margin-top: 5px;
+		    margin-left: 30px;
+		    margin-bottom: 30px;
+		    clear: both;
+		}
+		
+		.timeline-centered .timeline-entry .timeline-entry-inner {
+		    position: relative;
+		    margin-left: -20px;
+		}
+		
+		.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
+		    display: block;
+		    width: 40px;
+		    height: 40px;
+		    background: #2c98f0;
+		    -webkit-border-radius: 50%;
+		    -moz-border-radius: 50%;
+		    -ms-border-radius: 50%;
+		    border-radius: 50%;
+		    text-align: center;
+		    -moz-box-shadow: 0 0 0 5px #f2f3f7;
+		    -webkit-box-shadow: 0 0 0 5px #f2f3f7;
+		    box-shadow: 0 0 0 5px #f2f3f7;
+		    line-height: 40px;
+		    float: left;
+		}
+		
+		.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
+		    color: #fff;
+		}
+		
+		[class^="icon-"], [class*=" icon-"] {
+		    font-family: 'icomoon' !important;
+		    speak: none;
+		    font-style: normal;
+		    font-weight: normal;
+		    font-variant: normal;
+		    text-transform: none;
+		    line-height: 1;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		}
+		
+		.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+		    position: relative;
+		    background: #f2f3f7;
+		    padding: 1.5em;
+		    margin-left: 60px;
+		    -webkit-background-clip: padding-box;
+		    -moz-background-clip: padding;
+		    background-clip: padding-box;
+		}
+		
+		.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+		    font-size: 20px;
+		    font-family: "Quicksand", Arial, sans-serif;
+		    font-weight: 500;
+		}
+		
+		.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 a {
+		    color: #000;
+		}
+		      
+        .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 span {
+		    -webkit-opacity: .4;
+		    -moz-opacity: .4;
+		    opacity: .4;
+		    -ms-filter: alpha(opacity=40);
+		    filter: alpha(opacity=40);
+		    font-size: 16px;
+		}
+		
+		.icon-pen2:before {
+		    content: "\e90f";
+		}
+		
+		.timeline-centered:before {
+		    content: '';
+		    position: absolute;
+		    display: block;
+		    width: 4px;
+		    background: #f2f3f7;
+		    top: 20px;
+		    bottom: 10px;
+		    margin-left: 29px;
+		}
+		
+		.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
+		    background: #fff;
+		    width: 20px;
+		    height: 20px;
+		    margin-left: 10px;
+		}
     </style>
 </head>
 
@@ -96,14 +224,18 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#experience">Education</a>
+                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                </li>
+                
             </ul>
         </div>
     </nav>
@@ -119,9 +251,14 @@ License URL: https://creativecommons.org/licenses/by/4.0/
               <div class="subheading mb-5">
               		Junior SoftWare Developer
               </div>
-              <p class="mb-5" style="max-width: 500px; font-weight:bold; font-size: 18px; font-family : 'Noto Sans KR', sans-serif;">
+              <p class="mb-5" style="max-width: 500px; font-weight:900; font-size: 18px; font-family : 'Noto Sans KR', sans-serif;">
               	안녕하세요. 저는 자바 개발자를 꿈꾸고 있는 신경섭입니다.
               </p>
+              
+              <p class="mb-5" style="font-weight:600; font-size: 18px; font-family : 'Noto Sans KR', sans-serif;">
+              	새로운 도전을 좋아하고, 생각을 공유하며 한 걸음 한 걸음 성장하는 백앤드 개발자입니다.
+              </p>
+              
               <ul>
               <li class="per_inf">Phone : 010-6687-3789</li>
               <li class="per_inf">Email : abcdfabcdf@naver.com</li>
@@ -146,43 +283,421 @@ License URL: https://creativecommons.org/licenses/by/4.0/
           </div>
       </section>
 
-    <!--====================================================
-                        EDUCATION
-    ======================================================-->      
-      <section class="resume-section p-3 p-lg-5 " id="experience">
+<!--====================================================
+                       EDUCATION
+    ======================================================-->   
+	<style>
+	.row-pt-md {
+    padding-top: 3em;
+}
+
+@media (min-width: 992px)
+.col-md-4 {
+    width: 50%;
+}
+
+@media (min-width: 992px)
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+}
+
+.services {
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 0;
+    height:300px;
+}
+
+.services .icon {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 50px;
+    display: table;
+    margin: 0 auto;
+    background: #ec5453;
+}
+
+.services .icon:before, .services .icon:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: '';
+}
+
+.services .icon:before {
+    top: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 30px 50px;
+    border-color: transparent transparent #ec5453 transparent;
+}
+
+.services {
+    padding: 1.5em;
+    -webkit-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -ms-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    -o-box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17);
+    border-bottom: 2px solid #2c98f0;
+}
+
+.services .icon i {
+    font-size: 35px;
+    color: #fff;
+    z-index: 1;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.icon-bulb:before {
+    content: "\e90e";
+}
+
+.services .icon:after {
+    bottom: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 50px 0 50px;
+    border-color: #ec5453 transparent transparent transparent;
+}
+
+.services .desc {
+    margin-top: 60px;
+}
+
+.services .desc h3 {
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom:15px;
+}   
+.services.color-2 .icon {
+    background:#2fa499;
+}
+.services.color-2 .icon:before {
+    border-color: transparent transparent #2fa499 transparent;
+}
+.services.color-2 .icon:after {
+    border-color: #2fa499 transparent transparent transparent;
+}
+
+.services.color-3 .icon {
+    background:#4054b2;
+}
+.services.color-3 .icon:before {
+    border-color: transparent transparent #4054b2 transparent;
+}
+.services.color-3 .icon:after {
+    border-color: #4054b2 transparent transparent transparent;
+}
+
+.services.color-4 .icon {
+    background:#f9bf3f;
+}
+.services.color-4 .icon:before {
+    border-color: transparent transparent #f9bf3f transparent;
+}
+.services.color-4 .icon:after {
+    border-color: #f9bf3f transparent transparent transparent;
+}
+
+.services.color-5 .icon {
+    background:#a84cb8;
+}
+.services.color-5 .icon:before {
+    border-color: transparent transparent #a84cb8 transparent;
+}
+.services.color-5 .icon:after {
+    border-color: #a84cb8 transparent transparent transparent;
+}
+
+.services.color-6 .icon {
+    background:#2c98f0;
+}
+.services.color-6 .icon:before {
+    border-color: transparent transparent #2c98f0 transparent;
+}
+.services.color-6 .icon:after {
+    border-color: #2c98f0 transparent transparent transparent;
+}
+	</style>
+
+
+	<section class="resume-section p-3 p-lg-5" id="education" style="min-height: 0;">
           <div class="row my-auto">
               <div class="col-12">
                 <h2 class="  text-center">Education</h2>
                 <div class="mb-5 heading-border"></div>
-              </div>
-              <div class="main-award" id="award-box" style="width:100%; margin : 7% 0;">
-                  <div class="award">
-                      <div class="award-icon"></div>
-                      <div class="award-content">
-                          <span class="date">Mar 2013 - Feb 2020</span>
-                          <h5 class="title">중부대학교</h5>
-                          <p class="description">
-                             	(주) 정보통신학, (부) IoT융합전공을 졸업했습니다.
-                          </p>
-                      </div>
+              </div> 
+              
+              <div class="resume-item col-md-6 col-sm-12 "> 
+                <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                  <div class=" resume-content mr-auto" style="height:auto;">
+                      <h4 class="mb-3"><i class="fa fa-globe mr-3 text-primary"></i> Joongbu Univ.</h4>
+	                       <ul>
+		                       <li style="font-weight:bold; margin-bottom:10px;">
+		                      		(주)정보통신학, (부)IoT융합전공 졸업
+		                       </li>
+		                       <p style="font-size:15px;">IoT 제품에 관한 프로젝트 기획 방법을 배우고, 제품 개발 및 제작을 통해 기업 업무<br> 프로세스를 익혔으며, 실무 임원진의 강의를 듣고
+									가상 기업의 가상 매출을 통해<br> 기업의 경영상태 분석을 배웠습니다.</p>
+		                       <li style="font-weight:bold; margin-bottom:10px;">
+		                       		중부대학교 공모전 수상(최우수상)
+		                       </li>
+		                       <p style="font-size:15px;">	
+                        	IoT 제품인 '스마트 아쿠아팜'을 제작하여 교내 캡스톤 디자인 아이템 공모전에서 <br>최우수상을 수상하였습니다.
+
+                       	</p>
+	                       </ul>
+                     	 
                   </div>
-                  <div class="award">
-                      <div class="award-icon"></div>
-                      <div class="award-content">
-                          <span class="date">Sep 2019 - May 2020</span>
-                          <h5 class="title">KH 정보교육원</h5>
-                          <p class="description"> 자바(JAVA) 개발자 프레임워크 양성과정을 수료했습니다.
-                          </p>
-                      </div>
+                  <div class="resume-date text-md-right">
+                      <span class="text-primary">March 2013 - February 2020</span>
+                  </div>
+                </div>  
+         </div>
+         
+         <div class="resume-item col-md-6 col-sm-12 "> 
+                <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+                  <div class=" resume-content mr-auto" style="height:auto;">
+                      <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-success "></i> KH Academy</h4>
+	                       <ul>
+		                       <li style="font-weight:bold; margin-bottom:10px;">
+		                      		 JAVA 개발자 프레임워크 양성과정 수료<br>
+		                       </li>
+                       	<p style="font-size:15px;"> 	
+                        	교육을 통해 전반적인 프로그래밍에 대한 지식을 쌓았으며, 팀 프로젝트를 통해 <br>화면 구현,
+                        	SpringFramework, DB(ORACLE) 설계, GITHUB를 통한 형상관리 등 <br>다양한 기술을 배웠습니다.
+                       	</p>
+	                       </ul>
+                  </div>
+                  <div class="resume-date text-md-right">
+                      <span class="text-success">September 2019 - May 2020</span>
+                  </div>
+                </div>  
+         	</div>
+          </div>
+      </section>
+
+
+    <!--====================================================
+                        EXPERIENCE
+    ======================================================-->      
+      <section class="resume-section p-3 p-lg-5 " id="experience">
+      		<div class="row my-auto">
+	      		<div class="col-12">
+	                <h2 class="  text-center">Experience </h2>
+	                <div class="mb-5 heading-border"></div>
+              	</div>
+						<div class="col-md-12">
+				         <div class="timeline-centered">
+				         
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1">
+					               <i class="fas fa-pencil-alt"></i>
+					               </div>
+												 <div class="timeline-label">
+											 	 <h2>(주) 씽쓰앤 인턴 <span>2019-2020</span></h2>
+											 		 <p>
+
+'CCIT'라는 기업을 연계로 하는 하나의 팀을 만들고, 4차혁명시대에 떠오르는 IoT 제품인 스마트팜에 '아쿠아포닉스' 기술을 접목시켜
+식물과 어항 속 물고기가 함께 공존하며 <br>자동으로 운영되는 '스마트 아쿠아팜'을 제작하였습니다.
+센서와 어플 사이의 값들은 JSON 형식으로 주고 받았으며, 통신은 IoT 제품에 최적화되어있는 MQTT 프로토콜을<br> 이용하였습니다.
+
+인턴 경험을 통해 이와 같은 IoT 제품의 전체적인 흐름을 관찰할 수 있었으며, 실무에서 사용하는 기술과 통신방식을 배우고, 기술적 측면뿐만 아니라 <br>기업의 조직 업무 프로세스, 경영분석에 대해서도 배웠습니다.
+
+											 		 </p>
+											 	</div>
+
+					            </div>
+					         </article>
+					         
+					         <article class="timeline-entry animate-box fadeInLeft animated" data-animate-effect="fadeInLeft">
+					            <div class="timeline-entry-inner">
+
+					               <div class="timeline-icon color-1" style="background-color:#ec5453;">
+					               <i class="fas fa-pencil-alt"></i>
+					               </div>
+												 <div class="timeline-label">
+											 	 <h2><a href="#">교육센터에서 팀 프로젝트 경험</a> <span>2019-2020</span></h2>
+											 		 <p>
+ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ
+ㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇㅇ											 			
+
+											 		 </p>
+											 	</div>
+
+					            </div>
+					         </article>
+					         
+					         <article class="timeline-entry begin animate-box fadeInUp animated" data-animate-effect="fadeInBottom">
+					            <div class="timeline-entry-inner">
+					               <div class="timeline-icon color-none">
+					               </div>
+					            </div>
+					         </article>
+					      </div>
+					   </div>
+				   </div>
+      </section>
+
+    <!--====================================================
+                        SKILLS
+    ======================================================-->       
+      <section class=" d-flex flex-column" id="skills">
+         <div class="p-lg-5 p-3 skill-cover">
+          <h3 class="text-center text-white">Coding Skills</h3>
+          <div class="row text-center my-auto "> 
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                     <i class="fab fa-java fa-5x"></i>
+                      <h2><span class="counter"> 80 </span><span>%</span></h2>
+                      <p>JAVA</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fas fa-database fa-5x"></i>
+                      <h2><span class="counter"> 85 </span><span>%</span></h2>
+                      <p>ORACLE</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fab fa-html5 fa-5x"></i>
+                      <h2><span class="counter"> 85 </span><span>%</span></h2>
+                      <p>HTML5</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fab fa-css3 fa-5x"></i>
+                      <h2><span class="counter"> 70 </span><span>%</span></h2>
+                      <p>CSS3</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                     <i class="fab fa-js-square fa-5x"></i>
+                      <h2><span class="counter"> 75 </span><span>%</span></h2>
+                      <p>JAVASCRIPT</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                     <i class="fab fa-github fa-5x"></i>
+                      <h2><span class="counter"> 75 </span><span>%</span></h2>
+                      <p>GITHUB</p>
                   </div>
               </div>
           </div>
-      </section>
+         </div>
+         </section>
+         <div class="row my-auto" style="margin: 0px 6%; padding-top: 30px;">
+         
+         <div class="row row-pt-md">
+						<div class="col-md-4 text-center animate-box fadeInUp animated">
+							<div class="services color-1">
+								<span class="icon">
+									<i class="fab fa-java"></i>
+								</span>
+								<div class="desc">
+									<h3>JAVA</h3>
+									<p style="height:72px"><strong style="color:#ec5453;">JAVA</strong>의 기본적인 문법에 대해 이해하고,<br> <strong style="color:#ec5453;">MVC</strong> 패턴의 흐름을 이해하고 있으며,<br> 
+						<strong style="color:#ec5453;">JDBC, JSP, SPRING</strong> 등 다양한 기술들을 <br>사용할 수 있습니다.</p>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="col-md-4 text-center animate-box fadeInUp animated">
+							<div class="services color-2" style="border-bottom: 2px solid #2fa499;">
+								<span class="icon">
+									<i class="fas fa-database"></i>
+								</span>
+								<div class="desc">
+									<h3>ORACLE</h3>
+									<p style="height:72px"><strong style="color:#2fa499;">데이터베이스</strong>의 기본 개념을 가지고 있으며, <strong style="color:#2fa499;">CRUD</strong>가 가능하고 <strong style="color:#2fa499;">JOIN, GROUP BY</strong>와 같이 <br>
+                      	조건에 맞는 <strong style="color:#2fa499;">ORACLE</strong> 문법을 사용할 수 <br>있습니다.
+					  </p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4 text-center animate-box fadeInUp animated">
+							<div class="services color-3" style="border-bottom: 2px solid #4054b2;">
+								<span class="icon">
+									<i class="fab fa-html5"></i>
+								</span>
+								<div class="desc">
+									<h3>HTML5</h3>
+									<p style="height:72px"><strong style="color:#4054b2;">HTML</strong>을 사용해 직접 화면 구현을 하였습니다. 
+						<strong style="color:#4054b2;">HTML</strong>의 기본 태그와 활용 방법을 숙지하고<br> 있으며, 원하는 위치에 자유롭게 요소들을<br> 추가 및 삭제, 수정할 수 있습니다.
+					  </p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4 text-center animate-box fadeInUp animated">
+							<div class="services color-4" style="border-bottom: 2px solid #f9bf3f;">
+								<span class="icon">
+									<i class="fab fa-css3"></i>
+								</span>
+								<div class="desc">
+									<h3>CSS3</h3>
+									<p>기본적인 스타일 태그들을 사용할 수 있으며, Chrome의 개발자 도구를 사용하여 <strong style="color:#f9bf3f;">CSS</strong> 기술을<br> 조금 더 효율적으로 사용할 수 있습니다. 
+						<strong style="color:#f9bf3f;">BootStrap</strong>을 수정하여 필요한 부분에 <br>적용시킬 수 있습니다.
+									</p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4 text-center animate-box fadeInUp animated">
+							<div class="services color-5" style="border-bottom: 2px solid #a84cb8;">
+								<span class="icon">
+									<i class="fab fa-js-square"></i>
+								</span>
+								<div class="desc">
+									<h3>JAVASCRIPT</h3>
+									<p><strong style="color:#a84cb8;">JavaScript</strong> 문법을 공부하였으며,<br> 여러 이벤트들을 사용할 수 있습니다.<br>
+						<strong style="color:#a84cb8;">JQuery</strong>로 코드를
+						작성하여 <strong style="color:#a84cb8;">DOM</strong>을 간단하게 조작할 수 있으며,  <strong style="color:#a84cb8;">AJAX</strong> 기술을 활용하여<br> 필요에 따라 비동기 처리할 수 있습니다.
+					  </p>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-4 text-center animate-box fadeInUp animated">
+							<div class="services color-6" style="border-bottom: 2px solid #2c98f0;">
+								<span class="icon">
+									<i class="fab fa-github"></i>
+								</span>
+								<div class="desc">
+									<h3>GITHUB</h3>
+									<p>팀 프로젝트를 진행하면서 <strong style="color:#2c98f0;">GITHUB</strong>를 이용해 소스 코드를 공유하였습니다.<br>
+						<strong style="color:#2c98f0;">COMMIT, PUSH, MERGE</strong> 등 기본적인 기능을 알고 있으며, <strong style="color:#2c98f0;">Repository</strong> 생성 및 삭제를 할 수 있습니다.
+					  </p>
+								</div>
+							</div>
+						</div>
+				</div>
+         
+         
+         </div>
 
     <!--====================================================
                         PORTFOLIO
     ======================================================-->      
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio"> 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio" style="border-top: 1px solid #dee2e6;"> 
           <div class="row my-auto">
               <div class="col-12">
                 <h2 class="  text-center">Portfolio</h2>
@@ -243,51 +758,8 @@ License URL: https://creativecommons.org/licenses/by/4.0/
           </div>
       </section>
 
-    <!--====================================================
-                        SKILLS
-    ======================================================-->       
-      <section class=" d-flex flex-column" id="skills">
-         <div class="p-lg-5 p-3 skill-cover">
-          <h3 class="text-center text-white">Coding Skills</h3>
-          <div class="row text-center my-auto "> 
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                     <i class="fab fa-java fa-5x"></i>
-                      <h2><span class="counter"> 80 </span><span>%</span></h2>
-                      <p>JAVA</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <i class="fas fa-database fa-5x"></i>
-                      <h2><span class="counter"> 85 </span><span>%</span></h2>
-                      <p>ORACLE</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <i class="fab fa-html5 fa-5x"></i>
-                      <h2><span class="counter"> 85 </span><span>%</span></h2>
-                      <p>HTML5</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <i class="fab fa-css3 fa-5x"></i>
-                      <h2><span class="counter"> 70 </span><span>%</span></h2>
-                      <p>CSS3</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                     <i class="fab fa-js-square fa-5x"></i>
-                      <h2><span class="counter"> 75 </span><span>%</span></h2>
-                      <p>JAVASCRIPT</p>
-                  </div>
-              </div>
-          </div>
-         </div> 
-      </section>
+
+      
 
 <!--====================================================
                     PORTFOLIO MODALS
@@ -316,7 +788,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                               <div class="col-md-6" style="margin-top:30px;">
                                 <p class="detail_Subject" style="font-size: 21px; font-family: 'Saira Extra Condensed', serif; font-weight: 700; color: #343a40;">IoT 플랫폼</p>
                                 <p class="detail_content" style="padding-top: 15px; line-height:27px;">
-                                	각종 센서들을 통해 실시간으로 데이터 값 측정이 가능하고,측정 된 값을<br> 
+                                	각종 센서들을 통해 실시간으로 데이터 값 측정이 가능하고, 측정 된 값을<br> 
                                 	어플리케이션으로 확인할 수 있으며, 생육환경에 적합하지 않으면 <br> 
 									원격제어를 통해 최적의 생육환경을 만들어 줄 수 있는 IoT 제품입니다.
                                 </p>
